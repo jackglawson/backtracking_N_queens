@@ -89,3 +89,4 @@ size = 8
 solver = NQueensSolver(size)
 solver.solve()
 print(solver.num_solutions)
+#I did something
