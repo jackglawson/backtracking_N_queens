@@ -1,4 +1,5 @@
 import numpy as np
+from copy import copy
 
 
 class NQueensSolver:
@@ -20,7 +21,7 @@ class NQueensSolver:
         possible_spaces = self.get_possible_spaces(c)
         for possible_space in possible_spaces:
             c.add(possible_space)
-            self.bt(c)
+            self.bt(copy(c))
             c.remove(possible_space)
 
     def root(self):
